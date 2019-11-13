@@ -6,6 +6,6 @@ java_library(
         "//src/test/java/com/bmuschko/messenger:__pkg__"
     ],
     deps = [
-        "@maven//:org_apache_commons_commons_lang3"
+        "@maven//:org_apache_commons_commons_lang3",
     ],
 )

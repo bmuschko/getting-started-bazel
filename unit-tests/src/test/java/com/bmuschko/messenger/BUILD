@@ -6,6 +6,6 @@ java_test(
     test_class = "com.bmuschko.messenger.MessengerTest",
     deps = [
         "//src/main/java/com/bmuschko/messenger:messenger-lib",
-         "@maven//:junit_junit",
+         "@maven//:junit_junit"
     ],
 )

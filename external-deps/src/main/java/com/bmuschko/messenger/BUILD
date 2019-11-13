@@ -3,6 +3,6 @@ java_library(
     srcs = ["Messenger.java"],
     visibility = ["//src/main/java/com/bmuschko:__pkg__"],
     deps = [
-        "@maven//:org_apache_commons_commons_lang3",
+        "@maven//:org_apache_commons_commons_lang3"
     ],
 )
