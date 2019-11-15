@@ -7,6 +7,6 @@ java_binary(
 load("//rules:javadoc.bzl", "javadoc")
  
 javadoc(
-    name = "app-doc",
+    name = "api-docs",
     srcs = glob(["src/main/java/com/bmuschko/**/*.java"]),
 )
