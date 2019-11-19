@@ -1,0 +1,17 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: l.gcr.io/google/bazel:1.1.0
+    steps:
+      - checkout
+      - run:
+          name: Execute Sample Projects
+          command: |-
+              export CHECKOUT_DIR=${HOME}/project
+              cd $CHECKOUT_DIR/quickstart; bazel build //:hello-world
+              cd $CHECKOUT_DIR/multi-package; bazel build //src/main/java/com/bmuschko:hello-world
+              cd $CHECKOUT_DIR/external-deps; bazel build //src/main/java/com/bmuschko:hello-world
+              cd $CHECKOUT_DIR/unit-tests; bazel test //src/test/java/com/bmuschko/messenger:messenger-test
+              cd $CHECKOUT_DIR/junit5-macro; bazel test //src/test/java/com/bmuschko/messenger:messenger-test
+              cd $CHECKOUT_DIR/javadoc; bazel build //:api-docs
