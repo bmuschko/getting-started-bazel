@@ -3,9 +3,7 @@ def _impl(ctx):
   zip_output = ctx.outputs.zip
   java_home = str(ctx.attr._jdk[java_common.JavaRuntimeInfo].java_home)
 
-  src_list = []
-  for src in ctx.files.srcs:
-    src_list += [src.path]
+  src_list = [src.path for src in ctx.files.srcs]
   cmd = [
       "mkdir %s" % zip_input,
       "%s/bin/javadoc -quiet -d %s %s" % (java_home, zip_input, " ".join(src_list)),
