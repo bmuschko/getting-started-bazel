@@ -1,1 +1,1 @@
-= Polyglot projects with Bazel image:https://circleci.com/gh/bmuschko/polyglot-projects-bazel.svg?style=svg["CircleCI", link="https://circleci.com/gh/bmuschko/polyglot-projects-bazel"]
+= Getting started with Bazel image:https://circleci.com/gh/bmuschko/getting-started-bazel.svg?style=svg["CircleCI", link="https://circleci.com/gh/bmuschko/getting-started-bazel"]
