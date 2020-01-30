@@ -1,1 +1,23 @@
 = Getting started with Bazel image:https://circleci.com/gh/bmuschko/getting-started-bazel.svg?style=svg["CircleCI", link="https://circleci.com/gh/bmuschko/getting-started-bazel"]
+
+++++
+<br>
+<img align="left" role="left" src="https://learning.oreilly.com/library/cover/9781492077107/" width="110" alt="Book Cover" />
+++++
+Source code for book https://get.oreilly.com/ind_getting-started-with-bazel.html["Getting Started with Bazel"], published by Benjamin Muschko for O'Reilly Media Inc.
+
+Demonstrates Bazel features with the help of Java-based examples e.g. using external dependencies, running tests or writing macros/rules. Each example project is self-contained.
+
+++++
+<br>
+++++
+
+== Building the code
+
+The repository contains various example projects. Navigate to the relevant directory and execute the `bazel` command. All examples are based on Bazel 1.1.0.
+
+
+```
+cd quickstart
+bazel build //:hello-world
+```
