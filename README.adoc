@@ -6,7 +6,7 @@
 ++++
 Source code for book https://get.oreilly.com/ind_getting-started-with-bazel.html["Getting Started with Bazel"], published by Benjamin Muschko for O'Reilly Media Inc.
 
-Demonstrates Bazel features with the help of Java-based examples e.g. using external dependencies, running tests or writing macros/rules. Each example project is self-contained.
+Author Benjamin Muschko uses concrete Java-based examples to give you a first taste of Bazel’s syntax and functionality. The report also covers advanced features like remote caching and execution. You’ll be able to determine hands-on if Bazel is a good fit for your organization and come away with the knowledge and resources to start using this versatile, polyglot build tool for your project.
 
 ++++
 <br>
